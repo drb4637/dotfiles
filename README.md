@@ -95,4 +95,3 @@ Each plugin is sensitive to where you are and what you're doing, they reveal the
 * Use vim movement keys for moving between panes. 
 * Copy buffer is coppied to xclip.
 * Status bar tells you date, time, user, and hostname. Especially useful with nested ssh sessions. 
->>>>>>> dda438da176d02cd08add21bfd1158289736d850
