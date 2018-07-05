@@ -71,7 +71,7 @@
 	" Markup
 		inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
 
-  " JavaScript
+    " JavaScript
 
 " File and Window Management 
 	inoremap <leader>w <Esc>:w<CR>
