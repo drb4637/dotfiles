@@ -78,3 +78,11 @@
 	}
 	zle -N add_sudo
 	bindkey "^s" add_sudo
+
+# Clear
+	function do_clear() {
+		BUFFER= "clear"
+		zle end-of-line
+	}
+	zle -N do_clear
+	bindkey "^q" do_clear
