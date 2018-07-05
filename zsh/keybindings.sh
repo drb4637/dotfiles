@@ -23,6 +23,22 @@
 	zle -N git_prepare
 	bindkey "^g" git_prepare
 
+	function git_commit() {
+		if [ -n "$BUFFER" ];
+			then
+				BUFFER="git add -A; git commit -m \"$BUFFER\""
+		fi
+
+		if [ -z "$BUFFER" ];
+			then
+				BUFFER="git add -A; git commit -v"
+		fi
+				
+		zle accept-line
+	}
+	zle -N git_commit
+	bindkey "^t" git_commit
+
 # home
 	function goto_home() { 
 		BUFFER="cd ~/"$BUFFER
