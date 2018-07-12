@@ -1,10 +1,8 @@
-# up
-	function up_widget() {
-		BUFFER="cd .."
-		zle accept-line
-	}
-	zle -N up_widget
-	bindkey "^k" up_widget
+#prev 
+	bindkey "^j" up-line-or-beginning-search 
+
+#next
+	bindkey "^k" down-line-or-beginning-search 
 
 # git
 	function git_prepare() {
