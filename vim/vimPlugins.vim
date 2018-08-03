@@ -26,6 +26,12 @@ Plugin 'terryma/vim-mutiple-cursors.git'
 Plugin 'scrooloose/nerdtree.git'
 map <C-o> :NERDTreeToggle<cr>
 
+" This is to become a HTML wizzzzzzard 
+Plugin 'mattn/emmet-vim.git'
+
+" Delinter... tells me when i am wong(or less right)
+Plugin 'w0rp/ale.git'
+
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
