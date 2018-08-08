@@ -32,6 +32,9 @@ Plugin 'mattn/emmet-vim.git'
 " Delinter... tells me when i am wong(or less right)
 Plugin 'w0rp/ale.git'
 
+" Plugin for commenting out lines 
+PLugin 'tomtom/tcomment_vim.git'
+
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
