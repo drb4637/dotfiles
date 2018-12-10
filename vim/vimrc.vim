@@ -8,6 +8,8 @@
 	set relativenumber 
 	set number
 
+	imap nj <C-n>
+
 	"set cursorline
 	hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
 

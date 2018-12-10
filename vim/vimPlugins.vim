@@ -33,7 +33,7 @@ Plugin 'mattn/emmet-vim.git'
 Plugin 'w0rp/ale.git'
 
 " Plugin for commenting out lines 
-PLugin 'tomtom/tcomment_vim.git'
+Plugin 'tomtom/tcomment_vim.git'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
