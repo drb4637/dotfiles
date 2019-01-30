@@ -85,6 +85,12 @@
 	inoremap <leader>x <ESC>:x<CR>
 	nnoremap <leader>x :x<CR>
 
+	"remap panel navigation
+	nnoremap <leader>h <c-w>h
+	nnoremap <leader>j <c-w>j
+	nnoremap <leader>k <c-w>k
+	nnoremap <leader>l <c-w>l
+
 	nnoremap <leader>e :Ex<CR>
 	nnoremap <leader>t :tabnew<CR>:Ex<CR>
 	nnoremap <leader>v :vsplit<CR>:w<CR>:Ex<CR>
