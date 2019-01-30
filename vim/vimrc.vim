@@ -1,6 +1,6 @@
 " General Vim settings
 	syntax on
-	let mapleader=","
+	let mapleader = "\<Space>"	
 	set autoindent
 	set tabstop=4
 	set shiftwidth=4
@@ -34,6 +34,7 @@
 	nnoremap <leader>z zMzvzz
 
 	nnoremap vv 0v$
+
 
 	set listchars=tab:\|\ 
 	nnoremap <leader><tab> :set list!<cr>
@@ -87,7 +88,7 @@
 	nnoremap <leader>e :Ex<CR>
 	nnoremap <leader>t :tabnew<CR>:Ex<CR>
 	nnoremap <leader>v :vsplit<CR>:w<CR>:Ex<CR>
-	nnoremap <leader>s :split<CR>:w<CR>:Ex<CR>
+	nnoremap <leader>f :split<CR>:w<CR>:Ex<CR>
 
 " Return to the same line you left off at
 	augroup line_return
