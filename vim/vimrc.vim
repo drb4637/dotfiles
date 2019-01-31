@@ -1,6 +1,6 @@
 " General Vim settings
 	syntax on
-	let mapleader = "\<Space>"	
+	let mapleader = ","	
 	set autoindent
 	set tabstop=4
 	set shiftwidth=4
@@ -49,6 +49,14 @@
 	" General
 		inoremap <leader>for <esc>Ifor (int i = 0; i < <esc>A; i++) {<enter>}<esc>O<tab>
 		inoremap <leader>if <esc>Iif (<esc>A) {<enter>}<esc>O<tab>
+
+	" Python 
+		autocmd Filetype python imap <leader>for <esc>Ifor i in range(<esc>A):<enter><tab>
+		autocmd Filetype python imap <leader>if <esc>Iif <esc>A:<enter><tab>
+		autocmd Filetype python imap <leader>while <esc>Iwhile <esc>A:<enter><tab>
+
+	" JavaScript
+		autocmd Filetype javascript imap <leader>forin <esc>Ifor (i in <esc>A){<enter>}<tab>
 
 	" Java
 		inoremap <leader>sys <esc>ISystem.out.println(<esc>A);
