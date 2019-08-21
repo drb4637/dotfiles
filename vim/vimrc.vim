@@ -39,7 +39,6 @@
 
 	nnoremap vv 0v$
 
-
 	set listchars=tab:\|\ 
 	nnoremap <leader><tab> :set list!<cr>
 	set pastetoggle=<F2>
