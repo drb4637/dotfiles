@@ -8,12 +8,12 @@
 	function git_prepare() {
 		if [ -n "$BUFFER" ];
 			then
-				BUFFER="git add -A; git commit -m \"$BUFFER\" && git push"
+				BUFFER="git add -A; git commit -m \"$BUFFER\""
 		fi
 
 		if [ -z "$BUFFER" ];
 			then
-				BUFFER="git add -A; git commit -v && git push"
+				BUFFER="git add -A; git commit -v"
 		fi
 				
 		zle accept-line
@@ -36,6 +36,14 @@
 	}
 	zle -N git_commit
 	bindkey "^t" git_commit
+
+	function git_status() { 
+		BUFFER="git status"
+		zle end-of-line
+		zle accept-line
+	}
+	zle -N git_status
+	bindkey "^n" git_status
 
 # home
 	function goto_home() { 
