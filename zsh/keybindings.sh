@@ -45,6 +45,15 @@
 	zle -N git_status
 	bindkey "^n" git_status
 
+# clear 
+	function clearScreen() { 
+		BUFFER="clear"
+		zle end-of-line
+		zle accept-line
+	}
+	zle -N clearScreen
+	bindkey "^w" clearScreen
+
 # home
 	function goto_home() { 
 		BUFFER="cd ~/"$BUFFER
