@@ -45,9 +45,9 @@
 	zle -N git_status
 	bindkey "^n" git_status
 
-# clear 
+# clear and list the directory
 	function clearScreen() { 
-		BUFFER="clear"
+		BUFFER="clear ; ls"
 		zle end-of-line
 		zle accept-line
 	}
