@@ -10,10 +10,13 @@ starttmux() {
 	fi
 	local hosts=( $HOSTS )
 
-	tmux new-window "ssh pi@${hosts[0]}"
+	echo -n "UserName:"
+	read User 
+
+	tmux new-window "ssh $User@${hosts[0]}"
 	unset hosts[0];
 	for i in "${hosts[@]}"; do
-		tmux split-window -h  "ssh pi@$i"
+		tmux split-window -h  "ssh $User@$i"
 		tmux select-layout tiled > /dev/null
 	done
 	tmux select-pane -t 0

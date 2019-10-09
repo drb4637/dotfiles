@@ -1,3 +1,4 @@
+echo "Starting ZSH"
 time_out () { perl -e 'alarm shift; exec @ARGV' "$@"; }
 
 # Run tmux if exists
