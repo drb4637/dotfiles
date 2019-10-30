@@ -26,9 +26,9 @@
 	nnoremap J G
 	nnoremap K gg
 
-	nnoremap nn <C-n> 
-	vnoremap nn <C-n> 
-	inoremap nn <C-n> 
+"	nnoremap nn <C-n> 
+"	vnoremap nn <C-n> 
+"	inoremap nn <C-n> 
 
 	map <tab> %
 
