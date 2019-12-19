@@ -2,11 +2,15 @@
 	syntax on
 	let mapleader = "-"	
 	set autoindent
-	set tabstop=4
-	set shiftwidth=4
+
 	set dir=/tmp/
 	set relativenumber 
 	set number
+
+	"Tab things
+	set tabstop=4
+	set shiftwidth=4
+	set expandtab 
 
 	imap nj <C-n>
 
@@ -52,7 +56,7 @@
 	" General
 		inoremap <leader>for <esc>Ifor (int i = 0; i < <esc>A; i++) {<enter>}<esc>O<tab>
 		inoremap <leader>if <esc>Iif (<esc>A) {<enter>}<esc>O<tab>
-
+        
 	" Python 
 		autocmd Filetype python imap <leader>for <esc>Ifor i in range(<esc>A):<enter><tab>
 		autocmd Filetype python imap <leader>if <esc>Iif <esc>A:<enter><tab>

@@ -31,6 +31,10 @@ Plugin 'tomtom/tcomment_vim.git'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
+" Plugin for VHDL work 
+Plugin 'suoto/vim-hdl'
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
