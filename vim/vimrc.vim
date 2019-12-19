@@ -1,6 +1,7 @@
 " General Vim settings
 	syntax on
-	let mapleader = "-"	
+	"let mapleader = "-"	
+	let mapleader = " " 	
 	set autoindent
 
 	set dir=/tmp/
@@ -38,7 +39,7 @@
 
 	set backspace=indent,eol,start
 
-	nnoremap <Space> za
+"	nnoremap <Space> za
 	nnoremap <leader>z zMzvzz
 
 	nnoremap vv 0v$
