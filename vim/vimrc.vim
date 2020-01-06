@@ -2,8 +2,9 @@
 	syntax on
 	"let mapleader = "-"	
 	let mapleader = " " 	
-	set autoindent
+    let maplocalleader = "-"
 
+	set autoindent
 	set dir=/tmp/
 	set relativenumber 
 	set number
@@ -53,41 +54,43 @@
 " Language Specific
 	" Tabs
 		so ~/dotfiles/vim/tabs.vim
+       
+" General
+	inoremap <localleader>for <esc>Ifor (int i = 0; i < <esc>A; i++) {<enter>}<esc>O<tab>
+	inoremap <leader>if <esc>Iif (<esc>A) {<enter>}<esc>O<tab>
+     
+" Python 
+	autocmd Filetype python imap <leader>for <esc>Ifor i in range(<esc>A):<enter><tab>
+	autocmd Filetype python imap <leader>if <esc>Iif <esc>A:<enter><tab>
+	autocmd Filetype python imap <leader>while <esc>Iwhile <esc>A:<enter><tab>
 
-	" General
-		inoremap <leader>for <esc>Ifor (int i = 0; i < <esc>A; i++) {<enter>}<esc>O<tab>
-		inoremap <leader>if <esc>Iif (<esc>A) {<enter>}<esc>O<tab>
-        
-	" Python 
-		autocmd Filetype python imap <leader>for <esc>Ifor i in range(<esc>A):<enter><tab>
-		autocmd Filetype python imap <leader>if <esc>Iif <esc>A:<enter><tab>
-		autocmd Filetype python imap <leader>while <esc>Iwhile <esc>A:<enter><tab>
+" JavaScript
+	autocmd Filetype javascript imap <leader>forin <esc>Ifor (i in <esc>A){<enter>}<tab>
 
-	" JavaScript
-		autocmd Filetype javascript imap <leader>forin <esc>Ifor (i in <esc>A){<enter>}<tab>
+" Java
+	inoremap <leader>sys <esc>ISystem.out.println(<esc>A);
+	vnoremap <leader>sys yOSystem.out.println(<esc>pA);
 
-	" Java
-		inoremap <leader>sys <esc>ISystem.out.println(<esc>A);
-		vnoremap <leader>sys yOSystem.out.println(<esc>pA);
+" Java
+	inoremap <leader>con <esc>Iconsole.log(<esc>A);
+	vnoremap <leader>con yOconsole.log(<esc>pA);
 
-	" Java
-		inoremap <leader>con <esc>Iconsole.log(<esc>A);
-		vnoremap <leader>con yOconsole.log(<esc>pA);
+" C++
+	inoremap <leader>cout <esc>Istd::cout << <esc>A << std::endl;
+	vnoremap <leader>cout yOstd::cout << <esc>pA << std:endl;
 
-	" C++
-		inoremap <leader>cout <esc>Istd::cout << <esc>A << std::endl;
-		vnoremap <leader>cout yOstd::cout << <esc>pA << std:endl;
+" C
+	inoremap <leader>out <esc>Iprintf(<esc>A);<esc>2hi
+	vnoremap <leader>out yOprintf(, <esc>pA);<esc>h%a
+    
+" Typescript
+	autocmd BufNewFile,BufRead *.ts set syntax=javascript
+	autocmd BufNewFile,BufRead *.tsx set syntax=javascript
 
-	" C
-		inoremap <leader>out <esc>Iprintf(<esc>A);<esc>2hi
-		vnoremap <leader>out yOprintf(, <esc>pA);<esc>h%a
+" VHDL
 
-	" Typescript
-		autocmd BufNewFile,BufRead *.ts set syntax=javascript
-		autocmd BufNewFile,BufRead *.tsx set syntax=javascript
-
-	" Markup
-		inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
+" Markup
+	inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
 
     " JavaScript
 
