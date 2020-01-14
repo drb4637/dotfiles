@@ -91,13 +91,13 @@
 	"inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
 
 " File and Window Management 
-	inoremap <leader>w <Esc>:w<CR>
+	"inoremap <leader>w <Esc>:w<CR>
 	nnoremap <leader>w :w<CR>
 
-	inoremap <leader>q <ESC>:q<CR>
+	"inoremap <leader>q <ESC>:q<CR>
 	nnoremap <leader>q :q<CR>
 
-	inoremap <leader>x <ESC>:x<CR>
+	"inoremap <leader>x <ESC>:x<CR>
 	nnoremap <leader>x :x<CR>
 
 	"remap panel navigation
