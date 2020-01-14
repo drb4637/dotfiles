@@ -56,8 +56,8 @@
 		so ~/dotfiles/vim/tabs.vim
        
 " General
-	inoremap <localleader>for <esc>Ifor (int i = 0; i < <esc>A; i++) {<enter>}<esc>O<tab>
-	inoremap <leader>if <esc>Iif (<esc>A) {<enter>}<esc>O<tab>
+	nnoremap <localleader>for <esc>Ifor (int i = 0; i < <esc>A; i++) {<enter>}<esc>O<tab>
+	nnoremap <leader>if <esc>Iif (<esc>A) {<enter>}<esc>O<tab>
      
 " Python 
 	autocmd Filetype python nmap <leader>for <esc>Ifor i in range(<esc>A):<enter><tab>
