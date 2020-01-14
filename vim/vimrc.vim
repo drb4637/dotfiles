@@ -63,6 +63,7 @@
 	autocmd Filetype python nmap <leader>for <esc>Ifor i in range(<esc>A):<enter><tab>
 	autocmd Filetype python nmap <leader>if <esc>Iif <esc>A:<enter><tab>
 	autocmd Filetype python nmap <leader>while <esc>Iwhile <esc>A:<enter><tab>
+	autocmd Filetype python nmap <leader>sub <esc>Isubprocess.check_output(<esc>A, shell=True)
 
 " JavaScript
 	"autocmd Filetype javascript imap <leader>forin <esc>Ifor (i in <esc>A){<enter>}<tab>
