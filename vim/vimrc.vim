@@ -60,39 +60,35 @@
 	inoremap <leader>if <esc>Iif (<esc>A) {<enter>}<esc>O<tab>
      
 " Python 
-	autocmd Filetype python imap <leader>for <esc>Ifor i in range(<esc>A):<enter><tab>
-	autocmd Filetype python imap <leader>if <esc>Iif <esc>A:<enter><tab>
-	autocmd Filetype python imap <leader>while <esc>Iwhile <esc>A:<enter><tab>
+	autocmd Filetype python nmap <leader>for <esc>Ifor i in range(<esc>A):<enter><tab>
+	autocmd Filetype python nmap <leader>if <esc>Iif <esc>A:<enter><tab>
+	autocmd Filetype python nmap <leader>while <esc>Iwhile <esc>A:<enter><tab>
 
 " JavaScript
-	autocmd Filetype javascript imap <leader>forin <esc>Ifor (i in <esc>A){<enter>}<tab>
+	"autocmd Filetype javascript imap <leader>forin <esc>Ifor (i in <esc>A){<enter>}<tab>
 
 " Java
-	inoremap <leader>sys <esc>ISystem.out.println(<esc>A);
-	vnoremap <leader>sys yOSystem.out.println(<esc>pA);
+	"inoremap <leader>sys <esc>ISystem.out.println(<esc>A);
+	"vnoremap <leader>sys yOSystem.out.println(<esc>pA);
 
 " Java
-	inoremap <leader>con <esc>Iconsole.log(<esc>A);
-	vnoremap <leader>con yOconsole.log(<esc>pA);
+	"inoremap <leader>con <esc>Iconsole.log(<esc>A);
+	"vnoremap <leader>con yOconsole.log(<esc>pA);
 
 " C++
-	inoremap <leader>cout <esc>Istd::cout << <esc>A << std::endl;
-	vnoremap <leader>cout yOstd::cout << <esc>pA << std:endl;
+	"inoremap <leader>cout <esc>Istd::cout << <esc>A << std::endl;
+	"vnoremap <leader>cout yOstd::cout << <esc>pA << std:endl;
 
 " C
-	inoremap <leader>out <esc>Iprintf(<esc>A);<esc>2hi
-	vnoremap <leader>out yOprintf(, <esc>pA);<esc>h%a
+	"inoremap <leader>out <esc>Iprintf(<esc>A);<esc>2hi
+	"vnoremap <leader>out yOprintf(, <esc>pA);<esc>h%a
     
 " Typescript
-	autocmd BufNewFile,BufRead *.ts set syntax=javascript
-	autocmd BufNewFile,BufRead *.tsx set syntax=javascript
-
-" VHDL
+	"autocmd BufNewFile,BufRead *.ts set syntax=javascript
+	"autocmd BufNewFile,BufRead *.tsx set syntax=javascript
 
 " Markup
-	inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
-
-    " JavaScript
+	"inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
 
 " File and Window Management 
 	inoremap <leader>w <Esc>:w<CR>
