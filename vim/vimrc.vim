@@ -50,67 +50,61 @@
 	set pastetoggle=<F2>
 	set mouse=a
 	set incsearch
-    
+   
 " Language Specific
-	" Tabs
-"  		so ~/dotfiles/vim/tabs.vim
-"         
-"  " General
-  	nnoremap <leader>for <esc>Ifor (int i = 0; i < <esc>A; i++) {<enter>}<esc>O<tab>
-  	inoremap <leader>if <esc>Iif (<esc>A) {<enter>}<esc>O<tab>
+" Tabs
+    so ~/dotfiles/vim/tabs.vim
+       
+" General
+    nnoremap <localleader>for <esc>Ifor (int i = 0; i < <esc>A; i++) {<enter>}<esc>O<tab>
+    nnoremap <leader>if <esc>Iif (<esc>A) {<enter>}<esc>O<tab>
+     
+" vhdl
+    autocmd Filetype vhdl nnoremap <leader>if <esc>IIF <esc>A THEN<enter>END IF;
+    autocmd Filetype vhdl nnoremap <leader>for <esc>IFOR i in <esc>A LOOP<enter>END LOOP;
+    autocmd Filetype vhdl nnoremap <leader>case <esc>ICASE <esc>A IS<enter>END CASE;
+    autocmd Filetype vhdl nnoremap <leader>init <esc>Ilibrary IEEE;<enter>USE.IEEE.STD_LOGIC_1164.ALL;<enter><enter>ENTITY <esc>A IS<enter>END <esc>A;<enter><enter>ARCHITECTURE art of <esc>A is<enter>BEGIN<enter>END art;
+    
+" Python 
+	autocmd Filetype python nmap <leader>for <esc>Ifor i in range(<esc>A):<enter><tab>
+	autocmd Filetype python nmap <leader>if <esc>Iif <esc>A:<enter><tab>
+	autocmd Filetype python nmap <leader>while <esc>Iwhile <esc>A:<enter><tab>
+	autocmd Filetype python nmap <leader>sub <esc>Isubprocess.check_output(<esc>A, shell=True)
 
-  "c#
+" JavaScript
+	"autocmd Filetype javascript imap <leader>forin <esc>Ifor (i in <esc>A){<enter>}<tab>
 
-  "vhdl
-  autocmd Filetype vhdl nnoremap <leader>if <esc>IIF <esc>A THEN<enter>END IF;
-  autocmd Filetype vhdl nnoremap <leader>for <esc>IFOR i in <esc>A LOOP<enter>END LOOP;
-  autocmd Filetype vhdl nnoremap <leader>case <esc>ICASE <esc>A IS<enter>END CASE;
-  autocmd Filetype vhdl nnoremap <leader>init <esc>Ilibrary IEEE;<enter>USE.IEEE.STD_LOGIC_1164.ALL;<enter><enter>ENTITY <esc>A IS<enter>END <esc>A;<enter><enter>ARCHITECTURE art of <esc>A is<enter>BEGIN<enter>END art;
-"
-"
-"  " Python 
-"  	autocmd Filetype python imap <leader>for <esc>Ifor i in range(<esc>A):<enter><tab>
-"  	autocmd Filetype python imap <leader>if <esc>Iif <esc>A:<enter><tab>
-"  	autocmd Filetype python imap <leader>while <esc>Iwhile <esc>A:<enter><tab>
-"  
-"  " JavaScript
-"  	autocmd Filetype javascript imap <leader>forin <esc>Ifor (i in <esc>A){<enter>}<tab>
-"  
-"  " Java
-"  	inoremap <leader>sys <esc>ISystem.out.println(<esc>A);
-"  	vnoremap <leader>sys yOSystem.out.println(<esc>pA);
-"  
-"  " Java
-"  	inoremap <leader>con <esc>Iconsole.log(<esc>A);
-"  	vnoremap <leader>con yOconsole.log(<esc>pA);
-"  
-"  " C++
-"  	inoremap <leader>cout <esc>Istd::cout << <esc>A << std::endl;
-"  	vnoremap <leader>cout yOstd::cout << <esc>pA << std:endl;
-"  
-"  " C
-"  	inoremap <leader>out <esc>Iprintf(<esc>A);<esc>2hi
-"  	vnoremap <leader>out yOprintf(, <esc>pA);<esc>h%a
-"      
-"  " Typescript
-"  	autocmd BufNewFile,BufRead *.ts set syntax=javascript
-"  	autocmd BufNewFile,BufRead *.tsx set syntax=javascript
-"  
-"  " VHDL
-"  
-"  " Markup
-"  	inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
+" Java
+	"inoremap <leader>sys <esc>ISystem.out.println(<esc>A);
+	"vnoremap <leader>sys yOSystem.out.println(<esc>pA);
 
-    " JavaScript
+" Java
+	"inoremap <leader>con <esc>Iconsole.log(<esc>A);
+	"vnoremap <leader>con yOconsole.log(<esc>pA);
+
+" C++
+	"inoremap <leader>cout <esc>Istd::cout << <esc>A << std::endl;
+	"vnoremap <leader>cout yOstd::cout << <esc>pA << std:endl;
+
+" C
+	"inoremap <leader>out <esc>Iprintf(<esc>A);<esc>2hi
+	"vnoremap <leader>out yOprintf(, <esc>pA);<esc>h%a
+    
+" Typescript
+	"autocmd BufNewFile,BufRead *.ts set syntax=javascript
+	"autocmd BufNewFile,BufRead *.tsx set syntax=javascript
+
+" Markup
+	"inoremap <leader>< <esc>I<<esc>A><esc>yypa/<esc>O<tab>
 
 " File and Window Management 
-"	inoremap <leader>w <Esc>:w<CR>
+	"inoremap <leader>w <Esc>:w<CR>
 	nnoremap <leader>w :w<CR>
 
-"	inoremap <leader>q <ESC>:q<CR>
+	"inoremap <leader>q <ESC>:q<CR>
 	nnoremap <leader>q :q<CR>
 
-"	inoremap <leader>x <ESC>:x<CR>
+	"inoremap <leader>x <ESC>:x<CR>
 	nnoremap <leader>x :x<CR>
 
 	"remap panel navigation
