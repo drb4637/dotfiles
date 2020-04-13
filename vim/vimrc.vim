@@ -1,6 +1,5 @@
 " General Vim settings
 	syntax on
-	"let mapleader = "-"	
 	let mapleader = " " 	
     let maplocalleader = "-"
 
@@ -104,9 +103,11 @@
 	"inoremap <leader>q <ESC>:q<CR>
 	nnoremap <leader>q :q<CR>
 
-	"inoremap <leader>x <ESC>:x<CR>
 	nnoremap <leader>x :x<CR>
 
+	nnoremap <leader>< :bp<CR>
+	nnoremap <leader>> :bn<CR>
+    
 	"remap panel navigation
 	nnoremap <leader>h <c-w>h
 	nnoremap <leader>j <c-w>j
