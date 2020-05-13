@@ -15,3 +15,5 @@ git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=6000'
 
 
+#this is for you complete me 
+apt install build-essential cmake vim python3-dev
