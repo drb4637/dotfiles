@@ -4,17 +4,19 @@
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'file:///home/gmarik/path/to/plugin'
+
+" EXAMPLES
+" Git plugin not hosted on GitHub
+" Plugin 'git://git.wincent.com/command-t.git'
+
+" git repos on your local machine (i.e. when working on your own plugin)
+" Plugin 'file:///home/gmarik/path/to/plugin'
 
 " Plugin for syntax for typescript
 Plugin 'leafgarland/typescript-vim.git'
 
 " Fuzzy finder useful for getting them files
 Plugin 'junegunn/fzf.vim.git'
-
-" Basically what it says
-Plugin 'terryma/vim-mutiple-cursors.git'
 
 " A tree view of files and things super cools
 Plugin 'scrooloose/nerdtree.git'
