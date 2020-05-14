@@ -37,6 +37,10 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'suoto/vim-hdl'
 
 
+" PLugin for you complete me,
+" some notes for getting it to work with c, needs cmake with
+" 'set(CMAKE_EXPORT_COMPILE_COMMANDS ON'
+" to force complete press (Ctrl-space) 
 Plugin 'ycm-core/YouCompleteMe.git'
 
 
