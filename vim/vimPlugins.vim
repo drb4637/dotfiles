@@ -36,6 +36,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin for VHDL work 
 Plugin 'suoto/vim-hdl'
 
+Plugin 'flazz/vim-colorschemes'
+
 
 " PLugin for you complete me,
 " some notes for getting it to work with c, needs cmake with

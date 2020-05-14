@@ -9,8 +9,8 @@
 	set number
 
 	"Tab things
-	set tabstop=4
-	set shiftwidth=4
+	set tabstop=2
+	set shiftwidth=2
 	set expandtab 
 
 	imap nj <C-n>
@@ -30,6 +30,9 @@
 	nnoremap L $
 	nnoremap J G
 	nnoremap K gg
+
+    "search highlight color 
+    highlight Search guibg='Purple' guifg='NONE'
 
 "	nnoremap nn <C-n> 
 "	vnoremap nn <C-n> 
