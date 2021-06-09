@@ -1,7 +1,7 @@
 " General Vim settings
 	syntax on
 	let mapleader = " " 	
-    let maplocalleader = "-"
+    	let maplocalleader = "-"
 
 	set autoindent
 	set dir=/tmp/
@@ -14,7 +14,7 @@
 	set expandtab 
 
 	imap nj <C-n>
-
+	
 	"set cursorline
 	hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
 

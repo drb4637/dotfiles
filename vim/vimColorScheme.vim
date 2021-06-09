@@ -1,1 +1,1 @@
-colorscheme dracula 
+colorscheme 1989 

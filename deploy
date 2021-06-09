@@ -93,7 +93,12 @@ else
 fi
 
 printf "source '$HOME/dotfiles/zsh/zshrc_manager.sh'" > ~/.zshrc
-printf "so $HOME/dotfiles/vim/vimrc.vim" > ~/.vimrc
+printf "so $HOME/dotfiles/vim/vimrc.vim
+so $HOME/dotfiles/vim/tabs.vim
+so $HOME/dotfiles/vim/vimPluginsHeadLinux.vim
+so $HOME/dotfiles/vim/vimPlugins.vim
+so $HOME/dotfiles/vim/vimColorScheme.vim
+" > ~/.vimrc
 printf "source-file $HOME/dotfiles/tmux/tmux.conf" > ~/.tmux.conf
 
 echo
